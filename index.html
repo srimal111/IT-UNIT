@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahaweli Authority Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #8e44ad, #2980b9);
+            color: #fff;
+        }
+
+        header {
+           
+            text-align: center;
+        }
+
+        section {
+          
+            text-align: center;
+        }
+
+        .card_one {
+            background: #cfffd5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        button {
+           border-radius: 15px;
+           background-color: #8e44ad;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.5s ease;
+            width:100%;
+        }
+        h3,p,h2{
+        color: black;
+      
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>IT UNIT</h1>
+        <!-- User Card -->
+
+
+        <div class="card">
+            <h2>Mr. Amal Taranga </h2>
+            <p style="color: gray;">Designation:IT Administrator and Computer Programmer </p>
+            <p>Fax: <span id="">011- 2687498</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">330</span></p>
+            <p>Call Landline: <span id="ita_land_line_one">011- 2639330</span></p>
+            <p>Call Mobile: <span id="ita_mobile_line">071-8019020</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('dpmu_land_line_one')">Call Landline</button>
+            <button onclick="callNumber('dpmu_mobile_line', true)">Call Mobile</button>
+
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+        <hr>
+
+
+        <div class="card">
+            <h2>Mr. Pradeep Tharaka </h2>
+            <p style="color: gray;">Designation:IT Administrator and Computer Programmer </p>
+            <p>Fax: <span id="">011- 2687498</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">None</span></p>
+            <p>Call Landline: <span id="ita_land_line_one">011- 2639330</span></p>
+            <p>Call Mobile: <span id="ita_mobile_line">077-8196064</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('itp_land_line_one')">Call Landline</button>
+            <button onclick="callNumber('itp_mobile_line', true)">Call Mobile</button>
+
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+        <hr>
+
+
+        <div class="card">
+            <h2>Mrs. Thilini Udenika</h2>
+            <p style="color: gray;">Designation:IT Administrator and Computer Programmer </p>
+            <p>Fax: <span id="">011- 2687498</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">334</span></p>
+            <p>Call Landline: <span id="itt_land_line_one">011- 2639330</span></p>
+            <p>Call Mobile: <span id="itt_mobile_line">076-6819062</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('itt_land_line_one')">Call Landline</button>
+            <button onclick="callNumber('itt_mobile_line', true)">Call Mobile</button>
+
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+        <hr>
+
+        
+
+
+        <!-- More content goes here -->
+        <footer>
+            <p style="color: white; font-size: small;">Developmet & Publish by Department of IT <br> Mahaweli Authority Of Sri Lanaka </p>
+            <p style="color: white; font-size: xx-small;">copyright 2023 All Right Resived By Mahaweli Authority</p>
+        </footer>
+    </section>
+</body>
+</html>
