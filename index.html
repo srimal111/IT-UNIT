@@ -80,13 +80,17 @@
             <p>Call Mobile: <span id="ita_mobile_line">071-8019020</span></p>
 
             <!-- Buttons -->
-            <button onclick="callNumber('dpmu_land_line_one')">Call Landline</button>
-            <button onclick="callNumber('dpmu_mobile_line', true)">Call Mobile</button>
+            <button onclick="callNumber('ita_land_line_one')">Call Landline</button>
+            <button onclick="callNumber('ita_mobile_line', true)">Call Mobile</button>
 
             <script>
                 function callNumber(number, isMobile = false) {
                     var prefix = isMobile ? 'tel:' : 'tel:';
                     window.location.href = prefix + document.getElementById(number).textContent;
+                    
+                    window.location.href = prefix + phoneNumber;
+                    if (history.replaceState) {
+                        history.replaceState(null, null, window.location.href);}
                 }
             </script>
         </div>
@@ -98,8 +102,8 @@
             <p style="color: gray;">Designation:IT Administrator and Computer Programmer </p>
             <p>Fax: <span id="">011- 2687498</span></p>
             <p style="font-weight: bold;">In Com: <span id="a">None</span></p>
-            <p>Call Landline: <span id="ita_land_line_one">011- 2639330</span></p>
-            <p>Call Mobile: <span id="ita_mobile_line">077-8196064</span></p>
+            <p>Call Landline: <span id="itp_land_line_one">011- 2639330</span></p>
+            <p>Call Mobile: <span id="itp_mobile_line">077-8196064</span></p>
 
             <!-- Buttons -->
             <button onclick="callNumber('itp_land_line_one')">Call Landline</button>
@@ -109,6 +113,11 @@
                 function callNumber(number, isMobile = false) {
                     var prefix = isMobile ? 'tel:' : 'tel:';
                     window.location.href = prefix + document.getElementById(number).textContent;
+                    
+                    window.location.href = prefix + phoneNumber;
+                    if (history.replaceState) {
+                        history.replaceState(null, null, window.location.href);}
+
                 }
             </script>
         </div>
@@ -131,6 +140,10 @@
                 function callNumber(number, isMobile = false) {
                     var prefix = isMobile ? 'tel:' : 'tel:';
                     window.location.href = prefix + document.getElementById(number).textContent;
+
+                    window.location.href = prefix + phoneNumber;
+                    if (history.replaceState) {
+                        history.replaceState(null, null, window.location.href);}
                 }
             </script>
         </div>
